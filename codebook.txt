@@ -1,0 +1,41 @@
+# run_analysis.R Codebook
+
+dataURL: Character vector with the URL to download
+filelist:  Character vector with list of downloaded files 
+test_set_file: Character vector of file name with test measurement data set
+test_label_file: Character vector of file name with numerical activity labels/IDs for test measurement data set
+test_subject_file: Character vector of file name with subject list for test measurement data set
+
+train_set_file: Character vector of file name with train measurement data set
+train_label_file: Character vector of file name with numerical activity labels/IDs for train measurement data set
+train_subject_file: Character vector of file name with subject list for train measurement data set
+
+features_file: Character vector of file name with Type of data in train and test measurement data.
+activity_labels_file: Character vector of file with descriptive activity text that correlates to the numerical data in test/train_label_file (1 per numerical ID)
+
+test_set: Dataframe with test measurement data set
+test_label: Dataframe with numerical activity labels/IDs for test measurement data set (1 per row in test_set)
+test_subject: Dataframe with subject list for test measurement data set (1 per row in test_set)
+
+train_set: Dataframe with train measurement data set
+train_label: Dataframe with numerical activity labels/IDs for train measurement data set (1 per row in train_set)
+train_subject: Dataframe with subject list for train measurement data set (1 per row in train_set)
+
+features: Dataframe with type of data in train and test measurement data.  (1 element per column in each of the test/train_set dataframes)
+activity_labels: Dataframe with descriptive activity text that correlates to the numerical data in test/train_label (1 per numerical ID)
+
+test_activity_label: Dataframe with joined list of activity IDs and descriptive activity text (1 per row in test_set)
+train_activity_label: Dataframe with joined list of activity IDs and descriptive activity text (1 per row in train_set)
+
+test_set_subject: Dataframe with the test data and a column for subjects for each row
+train_set_subject: Dataframe with the train data and a column for subjects for each row
+
+test_set_full: Dataframe with the text labels for the type of activity, the subjects, and the test data.
+train_set_full: Dataframe with the text labels for the type of activity, the subjects, and the test data. 
+
+data_set_full: Dataframe with the text labels for the type of activity, the subjects, and the data for both test and train sets.
+
+mean_std_cols: Character vector with the list of columns that include mean or std in them as well as the activity and subject columns.
+mean_std_set: Dataframe with the mean, std, activity, and subject columns from the full data set with human readable column names.
+
+var_means: Dataframe with the means for each mean/std variable/column broken down by activity and subject
